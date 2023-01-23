@@ -1,0 +1,5 @@
+shutil
+pandas
+matplotlib
+numpy
+tensorflow
