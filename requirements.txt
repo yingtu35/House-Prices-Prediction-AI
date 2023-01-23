@@ -1,4 +1,3 @@
-shutil
 pandas
 matplotlib
 numpy

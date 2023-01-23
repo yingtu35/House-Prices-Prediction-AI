@@ -9,23 +9,32 @@ in Kaggle
 
 ## How I approach the problem
 1. **Understand the data**
-	- One for **predicting the actions** of the lunar lander
-	- The other for **setting the target actions**
+	- Visualize the relationships between features and prices
+	- Understand which features affect house prices more than others
 2. **Preprocess the data**
+	- Fill in missing values in the data
+	- Use one-hot encoding for non-numerical features
+	- Normalize numerical features
 3. **Build and train the model**
-	- Number of episodes: Maximum epochs the environment should reset for training.
-	- Number of time steps: Maximum number of actions the lunar lander takes in a single epoch
-	- Epsilon: A parameter to **balance exploration and exploitation**
-	- TAU: A soft update parameter for the Q network.
-	- You can find more hyperparameters in the source code
+	- Start with shallow model
+	- Increase the depths of the model for better optimization
+	- Use validation data for generalization purpose
+	- Visualize the training process by plotting graphs on metrics
 4. **Evaluate the model**
-	- The model is trained by updating weights in both Q networks
-	- As the model is trained, the average reward in one environment gets higher.
+	- Ensure the generalization ability of the model
 5. **Make Predictions**
+	- Take the test data as the input and output the predictions
+	- Output predictions to a CSV file
 
 ## How to Install and Run the project
 
-### 1. [Install Jupyter Notebook]()
+### 1. Install Jupyter Notebook
+
+```shell
+pip install notebook
+```
+As an alternative, you could also use [Anaconda](https://www.anaconda.com/)
+as it automatically install useful data science/machine learning packages for you. 
 
 ### 2. Install Required Python Modules
 
@@ -45,7 +54,8 @@ It is always useful to look up API references:
 [Tensorflow](https://www.tensorflow.org/api_docs)
 [Keras](https://keras.io/api/)
 
-Also, don't forget [Google](https://www.google.com/)\
+Also, don't forget your best friend: [Google](https://www.google.com/) \
+
 [ChatGPT](https://openai.com/blog/chatgpt/) is also a option, but be careful to inspect what it answers.
 
 ## License
